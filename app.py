@@ -41,7 +41,7 @@ def register():
         db.session.commit()
 
         return redirect(url_for("login"))
-    return render_template("ref_register.html")
+    return render_template("register.html")
 
 if __name__ == "__main__":
     db.create_all()
