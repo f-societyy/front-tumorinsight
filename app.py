@@ -16,7 +16,9 @@ class user(db.Model):
 def index():
     return render_template("index.html")
 
-
+@app.route("/instruct")
+def instruct():
+    return render_template("instructions.html")
 
 @app.route("/login",methods=["GET", "POST"])
 def login():
