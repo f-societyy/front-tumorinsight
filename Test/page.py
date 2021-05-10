@@ -1,5 +1,6 @@
 from locator import *
 from element import BasePageElement
+from helper import *
 
 
 class LoginUser(BasePageElement):
@@ -29,22 +30,22 @@ class BasePage(object):
 
 class MainPage(BasePage):
     def title_check(self):
-        if "TumorInsight" in self.driver.title:
-            status = "PASSED"
-        else:
-            status = "FAILED"
-        print("Test 1: Checking Title of the Web Application --> " + status)
+        cond = "TumorInsight" in self.driver.title
+        test_result(cond, "1", "Title of the HomePage")
         return "TumorInsight" in self.driver.title
 
     def go_to_github(self):
+        wait_elem(self.driver, self.driver.find_element(*MainPageLocators.GITHUB_SOCIAL))
         element = self.driver.find_element(*MainPageLocators.GITHUB_SOCIAL)
         element.click()
 
     def go_to_login(self):
+        wait_elem(self.driver, self.driver.find_element(*MainPageLocators.LOGIN_BUTTON))
         element = self.driver.find_element(*MainPageLocators.LOGIN_BUTTON)
         element.click()
 
     def go_to_signup(self):
+        wait_elem(self.driver, self.driver.find_element(*MainPageLocators.SIGNUP_BUTTON))
         element = self.driver.find_element(*MainPageLocators.SIGNUP_BUTTON)
         element.click()
 
