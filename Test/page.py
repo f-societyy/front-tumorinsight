@@ -1,4 +1,25 @@
 from locator import *
+from element import BasePageElement
+
+
+class LoginUser(BasePageElement):
+    locator = "/html/body/div[1]/div/div/form/div[1]/input"
+
+
+class LoginPass(BasePageElement):
+    locator = "/html/body/div/div/div/form/div[2]/input"
+
+
+class SignupUser(BasePageElement):
+    locator = "/html/body/div[1]/div/div/form/div[1]/input"
+
+
+class SignupMail(BasePageElement):
+    locator = "/html/body/div/div/div/form/div[2]/input"
+
+
+class SignupPass(BasePageElement):
+    locator = "/html/body/div/div/div/form/div[3]/input"
 
 
 class BasePage(object):
@@ -29,8 +50,11 @@ class MainPage(BasePage):
 
 
 class LoginPage(BasePage):
-    pass
+    user_name = LoginUser()
+    user_pass = LoginPass()
 
 
 class SignupPage(BasePage):
-    pass
+    new_user = SignupUser()
+    new_mail = SignupMail()
+    new_pass = SignupPass()
