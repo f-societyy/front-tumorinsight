@@ -54,6 +54,15 @@ class LoginPage(BasePage):
     user_name = LoginUser()
     user_pass = LoginPass()
 
+    def open_login(self):
+        self.driver.get("http://127.0.0.1:5000/login")
+        self.driver.implicitly_wait(10)
+
+    def go_login(self):
+        wait_elem(self.driver, self.driver.find_element(*LoginPageLocators.CONFIRM_LOGIN))
+        elem = self.driver.find_element(*LoginPageLocators.CONFIRM_LOGIN)
+        elem.click()
+
 
 class SignupPage(BasePage):
     new_user = SignupUser()
