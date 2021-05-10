@@ -11,9 +11,9 @@ class TumorInsightTest(unittest.TestCase):
         # TumorInsight is running locally on http://127.0.0.1:5000/
         self.driver.get("http://127.0.0.1:5000/")
 
-    def test_dummy(self):
-        print("Checking Setup and Teardown ftn")
-        assert True
+    def test_title(self):
+        mainPage = page.MainPage(self.driver)
+        assert mainPage.title_check()
 
     def tearDown(self):
         self.driver.close()
