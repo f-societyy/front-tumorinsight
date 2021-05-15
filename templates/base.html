@@ -5,10 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>TumorInsight</title>
-  <meta content="" name="description">
-
-  <meta content="" name="keywords">
+  <meta content="A Brain Tumor Detection and Classificaton Model" name="description">
+  <meta content="MRI, Brain Tumor, TumorInsight, Brain Tumor Classification, Brain Tumor Segmentation" name="keywords">
 
   <!-- Favicons -->
   <link href="{{ url_for('static',filename='custom/t-icon.png') }}" rel="icon">
@@ -25,8 +23,15 @@
   <link href="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
   <link href="{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+  <!-- Main CSS File -->
   <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
+  
+  {% if title %}
+    <title>TumorInsight - {{title}}</title>
+  {% else %}
+    <title>TumorInsight</title>
+  {% endif %}
+  
 </head>
 
 <body>
