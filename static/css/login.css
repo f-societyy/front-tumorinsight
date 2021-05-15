@@ -147,6 +147,14 @@ iframe {
   color: #666666;
 }
 
+.txt3 {
+  text-decoration: none;
+  color: navy;
+}
+
+.txt3 :hover{
+  color: darkcyan;
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ login ]*/
