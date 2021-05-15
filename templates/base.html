@@ -31,7 +31,7 @@
   {% else %}
     <title>TumorInsight</title>
   {% endif %}
-  
+
 </head>
 
 <body>
@@ -61,11 +61,15 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center">
-
+  {% block hero %}
+    
+  {% endblock %}
   </section><!-- End Hero -->
 
   <main id="main">
-  
+  {% block main %}
+      
+  {% endblock  %}
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
