@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>TumorInsight: Register</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">	
-	<link rel="icon" type="image/png" href="{{ url_for('static',filename='custom/favicon.ico') }}"/>
+{% extends "base.html" %}
+
+{% block head %}
+	<title>Register | TumorInsight</title>
 	
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='vendor2/bootstrap/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
@@ -15,9 +12,9 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/login_util.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/login.css') }}">
 
-</head>
-<body>
-	
+{% endblock head %}
+
+{% block main %}	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -98,5 +95,4 @@
 
 	<script src="{{ url_for('static',filename='js/login.js') }}"></script>
 
-</body>
-</html>
+{% endblock main %}
