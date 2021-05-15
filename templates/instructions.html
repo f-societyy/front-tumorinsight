@@ -1,165 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+{% block head %}
+  <title> Instructions | TumorInsight </title>
+{% endblock head %}
 
-  <title>TumorInsight: User Instructions</title>
-  <meta content="" name="description">
+{% block hero %}
 
-  <meta content="" name="keywords">
+<section id="hero" class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-lg-4 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-up">User Instructions</h1>
+      </div>
 
-  <!-- Favicons -->
-  <link href="{{ url_for('static',filename='custom/t-icon.png') }}" rel="icon">
-  <link href="{{ url_for('static',filename='custom/t-icon.png') }}" rel="apple-touch-icon">
+      <div class="col-lg-2"></div>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+      <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="zoom-out" data-aos-delay="150">
+        <table border=0>
+          <tr>
+            <td>
+            <ol style="font-size: 20px">
+              <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+              <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+              <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+              <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+              <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></li>
+            </ol>
+            </td>
+          </tr>
+        </table> <br>
 
-  <!-- Vendor CSS Files -->
-  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static',filename='vendor/aos/aos.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static',filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-  <link href="{{ url_for('static',filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+        <div data-aos="fade-up" data-aos-delay="600">
+          <div class="text-center text-lg-start">
+            <a href="/" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <i class="bi bi-arrow-left"></i> &nbsp; &nbsp;
+              <span>Go Home</span>
+            </a>
+          </div>
+        </div>
 
-  <!-- Template Main CSS File -->
-  <link href="{{ url_for('static',filename='css/style.css') }}" rel="stylesheet">
-
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <a href="/" class="logo d-flex align-items-center">
-        <img src="{{ url_for('static',filename='custom/logo.png') }}" alt="">
-        <span>&nbsp;TumorInsight: Instructions</span>
-      </a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="getstarted scrollto" href="login">Log In</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </div>
 
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <main id="main">
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">1</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Shooting Stars</h2>
-              <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">2</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The Catalyzer</h2>
-              <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">3</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                <circle cx="12" cy="5" r="3"></circle>
-                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">The 400 Blows</h2>
-              <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
-          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-          </div>
-          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10 title-font font-medium text-sm">4</div>
-          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-            <div class="flex-shrink-0 w-24 h-24 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Neptune</h2>
-              <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      <div class="copyright">
-        Open source at &nbsp; &lt;/<strong><span><a href="https://github.com/shaurya-src/TumorInsight" target="_blank">TumorInsight</a></span></strong>&gt;
-      </div>
-      <!-- <div class="credits">
-        Open source at <a href="https://github.com/shaurya-src/TumorInsight">GitHub</a>.
-      </div> -->
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="{{ url_for('static',filename='vendor/bootstrap/js/bootstrap.bundle.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/aos/aos.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/php-email-form/validate.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/purecounter/purecounter.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ url_for('static',filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
-
-  <!-- Template Main JS File -->
-  <script src="{{ url_for('static',filename='js/main.js') }}"></script>
-
-</body>
-
-</html>
+  </div>
+</section>
+  
+{% endblock hero %}
