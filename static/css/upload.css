@@ -18,7 +18,7 @@ html {
   
   /* line 64, ../sass/style.scss */
   .bg {
-    background-image: url("../img/3.jpg");
+    background-image: url("../custom/3.jpg");
     opacity: 0.5;
     height: 100%;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@ html {
   
   /* line 117, ../sass/style.scss */
   .infobg {
-    background-image: url("../img/2.jpg");
+    background-image: url("../custom/2.jpg");
     opacity: 0.5;
     background-repeat: no-repeat;
     background-position: center;
@@ -159,7 +159,7 @@ html {
   
   /* line 164, ../sass/style.scss */
   .uploadbg {
-    background-image: url("../img/1.jpg");
+    background-image: url("../custom/1.jpg");
     opacity: 0.5;
     height: 100%;
     background-repeat: no-repeat;

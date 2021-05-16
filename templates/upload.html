@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="stylesheets/hover.css"/>
-	<link rel="stylesheet" type="text/css" href="stylesheets/animations.css"/>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/hover.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/animations.css') }}"/>
 	
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Gudea" rel="stylesheet"> 
@@ -13,7 +13,7 @@
 
 
 
-	<link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/upload.css') }}"/>
 	<title> MRI Upload | TumorInsight </title>
 </head>
 <body>
@@ -21,12 +21,12 @@
 	<div class="fronttext">
 		We are Committed to Fighting Cancer
 	</div>
-	<img class="logopic" src="img/logo.png">
+	<img class="logopic" src="{{ url_for('static',filename='custom/logo.png') }}" height=100 width=100>
 	<p class="animated pulse downarrow"><a href="#info"><i class="fa fa-chevron-circle-down"></i></a></p>
 	<div class="infobg"></div>
 	<div class="info" id="info">
 			<p class="infoup">
-				<a href="#front"<i class="material-icons">keyboard_arrow_up</i></a>
+				<a href="#front"><i class="material-icons">keyboard_arrow_up</i></a>
 			</p>
 			<p class="infohead">
 				We are Here to Help
@@ -54,13 +54,13 @@
 		</div>
 		</div>
 		<p class="infodown">
-				<a href="#upload"<i class="material-icons">keyboard_arrow_down</i></a>
+				<a href="#upload"><i class="material-icons">keyboard_arrow_down</i></a>
 		</p>
 	</div>
 	<div class="uploadblack"><div class="uploadbg" id="upload"></div></div>
 	<div class="upload">
 		<p class="uploadup">
-			<a href="#info"<i class="material-icons">keyboard_arrow_up</i></a>
+			<a href="#info"><i class="material-icons">keyboard_arrow_up</i></a>
 		</p>
 		<p class="uploadhead">
 			MRI Tumor Detection
@@ -79,7 +79,7 @@
 
 
 		<p class="uploadtop">
-				<a href="#front"<i class="material-icons">arrow_upward</i></a>
+				<a href="#front"><i class="material-icons">arrow_upward</i></a>
 		</p>
 	</div>
 </body>
