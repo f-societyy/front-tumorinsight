@@ -17,6 +17,9 @@ class user(db.Model):
 def index():
     return render_template("index.html")
 
+@app.route("/user")
+def index_auth():
+    return render_template("index_auth.html")
 
 @app.route("/instruct")
 def instruct():
@@ -31,7 +34,7 @@ def login():
 
         login = user.query.filter_by(username=uname, password=passw).first()
         if login is not None:
-            return redirect(url_for("index"))
+            return redirect(url_for("index_auth"))
     return render_template("login.html")
 
 
