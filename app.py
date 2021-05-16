@@ -25,6 +25,9 @@ def index_auth():
 def instruct():
     return render_template("instructions.html")
 
+@app.route("/upload")
+def upload():
+    return render_template("upload.html")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
